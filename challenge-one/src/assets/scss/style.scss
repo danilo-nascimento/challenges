@@ -1,0 +1,8 @@
+@import 'functions';
+@import 'variables';
+@import 'normalize';
+@include normalize();
+@import 'global';
+@import 'header';
+@import 'products';
+@import 'footer';

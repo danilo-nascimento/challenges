@@ -1,0 +1,17 @@
+@mixin menu-item-style(){
+    font-family: $font-menu;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $primary-highlight;
+        border-radius: 5px;
+    }
+}
+
+@mixin flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

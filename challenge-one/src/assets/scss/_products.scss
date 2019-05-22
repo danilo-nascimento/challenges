@@ -1,0 +1,36 @@
+.products{
+    
+    &--title{
+        text-align: center;
+    }
+
+    &--list{
+        @include flexWrap();
+
+    }
+}
+
+.product{
+    &--item{
+        max-width: 50%;
+        flex: 1 0 50%;
+        text-align: center;
+        margin-bottom: 10%;
+        @media screen and (min-width: 768px){
+            max-width: 33%;
+            flex: 1 0 33%;
+        }
+    }
+
+    &--title{
+        display: inline-block;
+        &:after{
+            content: ' - ';
+        }
+    }
+
+    &--price{
+        color: $secondary;
+        font-weight: 600;
+    }
+}
